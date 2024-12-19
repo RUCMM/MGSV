@@ -2,668 +2,714 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
-  <meta property="og:url" content="URL OF THE WEBSITE" />
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="DESCRIPTION META TAG">
+    <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+    <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+    <meta property="og:url" content="URL OF THE WEBSITE" />
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/image/your_banner_image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+    <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Video to Music Moment Retrieval</title>
-  <link rel="icon" type="image/x-icon" href="static/images/music.svg">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <title>Video to Music Moment Retrieval</title>
+    <link rel="icon" type="image/x-icon" href="static/images/music.svg">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
-  <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
 </head>
 
 <body>
 
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Video to Music Moment Retrieval</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://xxayt.github.io" target="_blank">Zijie Xin</a><sup>♪ *</sup>,</span>
-              <span class="author-block">
-                Minquan Wang<sup>♫</sup>,
-              </span>
-              <span class="author-block">
-                Ye Ma<sup>♫</sup>,
-              </span>
-              <span class="author-block">
-                Bo Wang<sup>♫</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?hl=zh-CN&user=jFQSmp8AAAAJ" target="_blank">Quan
-                  Chen</a><sup>♫</sup>,</span>
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=9o5swhQAAAAJ" target="_blank">Peng
-                  Jiang</a><sup>♫</sup>,</span>
-              <span class="author-block">
-                <a href="http://lixirong.net" target="_blank">Xirong Li</a><sup>♪</sup>
-              </span>
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">Video to Music Moment Retrieval</h1>
+                        <div class="is-size-5 publication-authors">
+                            <!-- Paper authors -->
+                            <span class="author-block">
+                                <a href="https://xxayt.github.io" target="_blank">Zijie Xin</a><sup>♪ *</sup>,</span>
+                            <span class="author-block">
+                                Minquan Wang<sup>♫</sup>,
+                            </span>
+                            <span class="author-block">
+                                Ye Ma<sup>♫</sup>,
+                            </span>
+                            <span class="author-block">
+                                Bo Wang<sup>♫</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://scholar.google.com/citations?hl=zh-CN&user=jFQSmp8AAAAJ"
+                                    target="_blank">Quan
+                                    Chen</a><sup>♫</sup>,</span>
+                            <span class="author-block">
+                                <a href="https://scholar.google.com/citations?user=9o5swhQAAAAJ" target="_blank">Peng
+                                    Jiang</a><sup>♫</sup>,</span>
+                            <span class="author-block">
+                                <a href="http://lixirong.net" target="_blank">Xirong Li</a><sup>♪</sup>
+                            </span>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                <sup>♪</sup> Renmin University of China</span>
+                            <span>
+                                &nbsp &nbsp &nbsp &nbsp<sup>♫</sup> Kuaishou Technology</span><br>
+                            <span class="eql-cntrb">
+                                <small><sup>*</sup> Work done during internship at Kuaishou Technology</small></span>
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- Arxiv PDF link -->
+                                <span class="link-block">
+                                    <a href="static/pdfs/arxiv_vmmr.pdf" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span>Paper</span>
+                                    </a>
+                                </span>
+
+                                <!-- Github link -->
+                                <span class="link-block">
+                                    <a href="https://github.com/xxayt/VMMR" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span>
+
+                                <!-- Dataset link -->
+                                <span class="link-block">
+                                    <a href="https://drive.google.com/drive/folders/1mnthFhkWGjkS95aqMJicWEHfFqjIilXm?usp=sharing"
+                                        target="_blank" class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-google"></i>
+                                        </span>
+                                        <span>Dataset</span>
+                                    </a>
+                                </span>
+
+                                <!-- ArXiv abstract Link -->
+                                <span class=" link-block">
+                                    <a href="https://arxiv.org/abs/2408.16990" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <sup>♪</sup> Renmin University of China</span>
-              <span>
-                &nbsp &nbsp &nbsp &nbsp<sup>♫</sup> Kuaishou Technology</span><br>
-              <span class="eql-cntrb">
-                <small><sup>*</sup> Work done during internship at Kuaishou Technology</small></span>
-            </div>
-
-            <div class="column has-text-centered">
-              <div class="publication-links">
-                <!-- Arxiv PDF link -->
-                <span class="link-block">
-                  <a href="static/pdfs/arxiv_vmmr.pdf" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                    </span>
-                    <span>Paper</span>
-                  </a>
-                </span>
-
-                <!-- Github link -->
-                <span class="link-block">
-                  <a href="https://github.com/xxayt/VMMR" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- Dataset link -->
-                <span class="link-block">
-                  <a href="https://drive.google.com/drive/folders/1mnthFhkWGjkS95aqMJicWEHfFqjIilXm?usp=sharing"
-                    target="_blank" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-google"></i>
-                    </span>
-                    <span>Dataset</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class=" link-block">
-                  <a href="https://arxiv.org/abs/xxx" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                    </span>
-                    <span>arXiv</span>
-                  </a>
-                </span>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Teaser video-->
-  <section class="hero teaser">
-    <div class="container is-max-desktop">
-      <div class="hero-body has-text-centered">
-        <img src="static/images/fig1.png" alt="MY ALT TEXT" width="600" height="500" />
-        <h2>
-          Proposed Video-to-Music Moment Retrieval (<span style="color:green">VMMR</span>) task <em>versus</em> the
-          conventional video-to-music retrieval (VMR) task.
-        </h2>
-      </div>
-    </div>
-  </section>
-  <!-- End teaser video -->
-
-  <!-- Paper abstract -->
-  <section class="section hero is-light">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
-          <div class="content has-text-justified">
-            <p>
-              Adding proper background music helps complete a short video to be shared. Towards automating the task,
-              previous research focuses on video-to-music retrieval (VMR), aiming to find amidst a collection of music
-              the one best matching the content of a given video. Since music tracks are typically much longer than
-              short videos, meaning the returned music has to be cut to a shorter moment, there is a clear gap between
-              the practical need and VMR. In order to bridge the gap, we propose in this paper video to music moment
-              retrieval (<span style="color:green">VMMR</span>) as a new task. To tackle the new task, we build a
-              comprehensive dataset <span style="color:orange">Ad-Moment</span> which contains 50K short videos
-              annotated with music moments and develop a two-stage approach. In particular, given a test video, the most
-              similar music is retrieved from a given collection. Then, a Transformer based music moment localization is
-              performed. We term this approach
-              <u>Re</u>trieval <u>a</u>nd <u>L</u>ocalization (<span style="color:red"><b>ReaL</b></span>).
-              Extensive experiments on real-world datasets verify the
-              effectiveness of the proposed method for <span style="color:green">VMMR</span>.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End paper abstract -->
-
-  <!-- dataset-->
-  <section class="hero is-small">
-    <div class="container is-max-desktop hero-body">
-      <div class="hero-body">
-        <h2 class="title has-text-centered is-3">Dataset: <span style="color:orange">Ad-Moment</span></h2>
-        <p class="has-text-left">
-          We gather and clean approximately 50k short advertising videos with their corresponding music data, and
-          propose an automated weakly-supervised pipeline for generating music moment timestamp annotations.
-        </p>
-        <div class="content has-text-centered">
-          <img src="static/images/data collection pipeline.png" width="500" height="500" />
-        </div>
-        <h2 class="subtitle has-text-centered">
-          Conceptual diagram of the weakly-supervised multi-modal timestamp collection pipeline.
-        </h2>
-
-        <div class="content has-text-centered">
-          <img src="static/images/dataset.png" width="600" height="600" />
-        </div>
-        <h2 class="subtitle has-text-centered">
-          Overview of the <span style="color:orange">Ad-Moment</span> dataset.
-        </h2>
-      </div>
-
-    </div>
-  </section>
-  <!-- End dataset -->
-
-
-  <!-- method-->
-  <section class="hero is-small is-light">
-    <div class="container is-max-desktop hero-body">
-      <h2 class="title has-text-centered is-3">Method: <span style="color:red">ReaL</span> Framework</h2>
-      <div class="columns is-centered">
-
-        <div class="column">
-          <h2 class="title is-4 has-text-centered">Stage I: Video-to-Music Retrieval</h2>
-          <div class="content">
-            <p class="has-text-centered">
-              llustration of the retrieval model in stage I.
-            </p>
-            <div class="has-text-centered">
-              <img src="static/images/stage1_new.png" width="300" height="500" />
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <h2 class="title is-4 has-text-centered">Stage II: Music Moment Localization</h2>
-          <div class="columns is-centered">
-            <div class="column content">
-              <p class="has-text-left">
-                Illustration of the proposed video-music moment localization model <em>Music-DETR</em>, which is
-                composed of music/video temporal modeling, cross-modal fusion encoder, and DETR-based decoder. The
-                decoder, following the DETR, performs the moment localization task. We use video embeddings to
-                initialize the moment queries, enabling the prediction of the span range, moment classification, and
-                moment embedding. Additionally, we optimize the alignment between the video and the moment embeddings
-                with audio auxiliary to further constrain the training process and improve performance.
-              </p>
-              <div class="has-text-centered">
-                <img src="static/images/stage2_new.png" width="800" height="700" />
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- End method -->
-
-
-
-
-  <!-- Quantitative Experiment -->
-  <section class="hero is-small">
-    <div class="container is-max-desktop hero-body">
-      <h2 class="title is-3 has-text-centered">Comparison with Other Methods</h2>
-      <div class="columns is-centered">
-
-        <div class="column">
-          <div class="content">
-            <p class="has-text-centered">
-              Music Moment Localization (MML) results
-            </p>
-            <img src="static/images/MML_result.png" width="97%" />
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="columns is-centered">
-            <div class="column content">
-              <p class="has-text-centered">
-                Video-to-Music Moment Retrieval (<span style="color:green">VMMR</span>) results
-              </p>
-              <img src="static/images/VMMR_result.png" width="100%" />
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- Image carousel -->
-  <section class="hero is-small is-light">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-
-        <h2 class="title has-text-centered is-3">Data Display</h2>
-
-
-        <!-- video show 1 -->
-        <div class="columns is-centered">
-          <!-- Video. -->
-          <div class="column">
-            <div class="content">
-              <h2 class="subtitle has-text-centered is-5">
-                Input Video
-              </h2>
-              <p class="has-text-centered">
-                Video duration: 12.80s
-              </p>
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="60%">
-                <source src="static/videos/112399878654.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-          <!--/ Video. -->
-
-          <!-- Music. -->
-          <div class="column">
-            <div class="columns is-centered">
-              <div class="column content">
-                <h2 class="subtitle has-text-centered is-5">
-                  Retrieved Music
+    <!-- Teaser video-->
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body has-text-centered">
+                <img src="static/images/fig1.png" alt="MY ALT TEXT" width="600" height="500" />
+                <h2>
+                    Proposed Video-to-Music Moment Retrieval (<span style="color:green">VMMR</span>) task
+                    <em>versus</em> the
+                    conventional video-to-music retrieval (VMR) task.
                 </h2>
-                <p class="has-text-centered">
-                  &nbsp
-                </p>
-
-                <div class="has-text-centered">
-                  <code>Ground truth music</code>
-                </div>
-                <audio id="matting-audio" controls>
-                  <source src="static/videos/112399878654/112399878654_corresponding_complete_music_有没有动心.mp3"
-                    type="audio/mpeg">
-                </audio>
-                <div class="has-text-centered">
-                  <code>Candidate music rank1</code>
-                </div>
-                <audio id="matting-audio" controls>
-                  <source src="static/videos/112399878654/rank1_4+5xq5tjn434ss7d2+日落的云（剪辑版）.mp3" type="audio/mpeg">
-                </audio>
-                <div class="has-text-centered">
-                  <code>Candidate music rank2</code>
-                </div>
-                <audio id="matting-audio" controls>
-                  <source src="static/videos/112399878654/rank2_4+5xn824j353vza9i+热恋情节(剪辑版).mp3" type="audio/mpeg">
-                </audio>
-                <div class="has-text-centered">
-                  <code>Candidate music rank3</code>
-                </div>
-                <audio id="matting-audio" controls>
-                  <source src="static/videos/112399878654/rank3_4+5xu2n434j5wyda2+我爱你多一点点(加长版).mp3" type="audio/mpeg">
-                </audio>
-                <div class="has-text-centered">
-                  <code>Candidate music rank4</code>
-                </div>
-                <audio id="matting-audio" controls>
-                  <source src="static/videos/112399878654/rank4_4+5xevgxrievi892i+目及皆是你(心跳版).mp3" type="audio/mpeg">
-                </audio>
-              </div>
             </div>
-          </div>
-          <!--/ Music. -->
+        </div>
+    </section>
+    <!-- End teaser video -->
 
-          <!-- Moment. -->
-          <div class="column">
-            <div class="columns is-centered">
-              <div class="column content">
-                <h2 class="subtitle has-text-centered is-5">
-                  Located Moment
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            Adding proper background music helps complete a short video to be shared. Towards automating
+                            the task,
+                            previous research focuses on video-to-music retrieval (VMR), aiming to find amidst a
+                            collection of music
+                            the one best matching the content of a given video. Since music tracks are typically much
+                            longer than
+                            short videos, meaning the returned music has to be cut to a shorter moment, there is a clear
+                            gap between
+                            the practical need and VMR. In order to bridge the gap, we propose in this paper video to
+                            music moment
+                            retrieval (<span style="color:green">VMMR</span>) as a new task. To tackle the new task, we
+                            build a
+                            comprehensive dataset <span style="color:orange">Ad-Moment</span> which contains 50K short
+                            videos
+                            annotated with music moments and develop a two-stage approach. In particular, given a test
+                            video, the most
+                            similar music is retrieved from a given collection. Then, a Transformer based music moment
+                            localization is
+                            performed. We term this approach
+                            <u>Re</u>trieval <u>a</u>nd <u>L</u>ocalization (<span
+                                style="color:red"><b>ReaL</b></span>).
+                            Extensive experiments on real-world datasets verify the
+                            effectiveness of the proposed method for <span style="color:green">VMMR</span>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End paper abstract -->
+
+    <!-- dataset-->
+    <section class="hero is-small">
+        <div class="container is-max-desktop hero-body">
+            <div class="hero-body">
+                <h2 class="title has-text-centered is-3">Dataset: <span style="color:orange">Ad-Moment</span></h2>
+                <p class="has-text-left">
+                    We gather and clean approximately 50k short advertising videos with their corresponding music data,
+                    and
+                    propose an automated weakly-supervised pipeline for generating music moment timestamp annotations.
+                </p>
+                <div class="content has-text-centered">
+                    <img src="static/images/data collection pipeline.png" width="500" height="500" />
+                </div>
+                <h2 class="subtitle has-text-centered">
+                    Conceptual diagram of the weakly-supervised multi-modal timestamp collection pipeline.
                 </h2>
-                <p class="has-text-centered">
-                  &nbsp
-                </p>
-                <div class="has-text-centered">
-                  <code>Ground truth moment (47.0-59.8s)</code>
+
+                <div class="content has-text-centered">
+                    <img src="static/images/dataset.png" width="600" height="600" />
                 </div>
-                <audio id="matting-audio" controls>
-                  <source src="static/videos/112399878654/112399878654_corresponding_complete_music_有没有动心_47.0-59.8.mp3"
-                    type="audio/mpeg">
-                </audio>
-                <div class="has-text-centered">
-                  <code>Moment rank1 (0.01-12.7s)</code>
-                </div>
-                <audio id="matting-audio" controls>
-                  <source src="static/videos/112399878654/rank1_4+5xq5tjn434ss7d2+日落的云（剪辑版）_0.01-12.7.mp3"
-                    type="audio/mpeg">
-                </audio>
-                <div class="has-text-centered">
-                  <code>Moment rank2 (0.08-12.7s)</code>
-                </div>
-                <audio id="matting-audio" controls>
-                  <source src="static/videos/112399878654/rank2_4+5xn824j353vza9i+热恋情节(剪辑版)_0.08-12.65.mp3"
-                    type="audio/mpeg">
-                </audio>
-                <div class="has-text-centered">
-                  <code>Moment rank3 (0.07-12.7s)</code>
-                </div>
-                <audio id="matting-audio" controls>
-                  <source src="static/videos/112399878654/rank3_4+5xu2n434j5wyda2+我爱你多一点点(加长版)_0.07-12.65.mp3"
-                    type="audio/mpeg">
-                </audio>
-                <div class="has-text-centered">
-                  <code>Moment rank4 (0.17-30.5s)</code>
-                </div>
-                <audio id="matting-audio" controls>
-                  <source src="static/videos/112399878654/rank4_4+5xevgxrievi892i+目及皆是你(心跳版)_0.17-30.5.mp3"
-                    type="audio/mpeg">
-                </audio>
-              </div>
+                <h2 class="subtitle has-text-centered">
+                    Overview of the <span style="color:orange">Ad-Moment</span> dataset.
+                </h2>
             </div>
-          </div>
-          <!--/ Moment. -->
+
         </div>
+    </section>
+    <!-- End dataset -->
 
 
-        <!-- video show 2 -->
-        <div class="columns is-centered">
-          <!-- Video. -->
-          <div class="column">
-            <div class="content">
-              <p class="has-text-centered">
-                Video duration: 30.31s
-              </p>
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="60%">
-                <source src="static/videos/110568294389.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-          <!--/ Video. -->
-
-          <!-- Music. -->
-          <div class="column">
+    <!-- method-->
+    <section class="hero is-small is-light">
+        <div class="container is-max-desktop hero-body">
+            <h2 class="title has-text-centered is-3">Method: <span style="color:red">ReaL</span> Framework</h2>
             <div class="columns is-centered">
-              <div class="column content">
-                <p class="has-text-centered">
-                  &nbsp
-                </p>
 
-                <div class="has-text-centered">
-                  <code>Ground truth music</code>
+                <div class="column">
+                    <h2 class="title is-4 has-text-centered">Stage I: Video-to-Music Retrieval</h2>
+                    <div class="content">
+                        <p class="has-text-centered">
+                            llustration of the retrieval model in stage I.
+                        </p>
+                        <div class="has-text-centered">
+                            <img src="static/images/stage1_new.png" width="300" height="500" />
+                        </div>
+                    </div>
                 </div>
-                <audio id="matting-audio" controls>
-                  <source src="static/videos/110568294389/110568294389_corresponding_complete_music_快乐小宝贝（剪辑版）.mp3"
-                    type="audio/mpeg">
-                </audio>
-                <div class="has-text-centered">
-                  <code>Candidate music rank1</code>
-                </div>
-                <audio id="matting-audio" controls>
-                  <source src="static/videos/110568294389/rank1_4+5xcgif96ptbysjk+洛城花.mp3" type="audio/mpeg">
-                </audio>
-                <div class="has-text-centered">
-                  <code>Candidate music rank2</code>
-                </div>
-                <audio id="matting-audio" controls>
-                  <source src="static/videos/110568294389/rank2_4+5xnxxwz98pnk8mq+挖呀挖呀.mp3" type="audio/mpeg">
-                </audio>
-                <div class="has-text-centered">
-                  <code>Candidate music rank3</code>
-                </div>
-                <audio id="matting-audio" controls>
-                  <source src="static/videos/110568294389/rank3_4+5x4ip566zgkfqt6+听我说谢谢你.mp3" type="audio/mpeg">
-                </audio>
 
-              </div>
+                <div class="column">
+                    <h2 class="title is-4 has-text-centered">Stage II: Music Moment Localization</h2>
+                    <div class="columns is-centered">
+                        <div class="column content">
+                            <p class="has-text-left">
+                                Illustration of the proposed video-music moment localization model <em>Music-DETR</em>,
+                                which is
+                                composed of music/video temporal modeling, cross-modal fusion encoder, and DETR-based
+                                decoder. The
+                                decoder, following the DETR, performs the moment localization task. We use video
+                                embeddings to
+                                initialize the moment queries, enabling the prediction of the span range, moment
+                                classification, and
+                                moment embedding. Additionally, we optimize the alignment between the video and the
+                                moment embeddings
+                                with audio auxiliary to further constrain the training process and improve performance.
+                            </p>
+                            <div class="has-text-centered">
+                                <img src="static/images/stage2_new.png" width="800" height="700" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-          </div>
-          <!--/ Music. -->
+        </div>
+    </section>
+    <!-- End method -->
 
-          <!-- Moment. -->
-          <div class="column">
+
+
+
+    <!-- Quantitative Experiment -->
+    <section class="hero is-small">
+        <div class="container is-max-desktop hero-body">
+            <h2 class="title is-3 has-text-centered">Comparison with Other Methods</h2>
             <div class="columns is-centered">
-              <div class="column content">
-                <p class="has-text-centered">
-                  &nbsp
-                </p>
-                <div class="has-text-centered">
-                  <code>Ground truth moment (10.07-40.4s)</code>
-                </div>
-                <audio id="matting-audio" controls>
-                  <source
-                    src="static/videos/110568294389/110568294389_corresponding_complete_music_快乐小宝贝（剪辑版）_10.07-40.39.mp3"
-                    type="audio/mpeg">
-                </audio>
-                <div class="has-text-centered">
-                  <code>Moment rank1 (60.47-90.9s)</code>
-                </div>
-                <audio id="matting-audio" controls>
-                  <source src="static/videos/110568294389/rank1_4+5xcgif96ptbysjk+洛城花_60.47-90.87.mp3"
-                    type="audio/mpeg">
-                </audio>
-                <div class="has-text-centered">
-                  <code>Moment rank2 (3.82-34.0s)</code>
-                </div>
-                <audio id="matting-audio" controls>
-                  <source src="static/videos/110568294389/rank2_4+5xnxxwz98pnk8mq+挖呀挖呀_3.82-34.0.mp3" type="audio/mpeg">
-                </audio>
-                <div class="has-text-centered">
-                  <code>Moment rank3 (41.44-72.4s)</code>
-                </div>
-                <audio id="matting-audio" controls>
-                  <source src="static/videos/110568294389/rank3_4+5x4ip566zgkfqt6+听我说谢谢你_41.44-72.37.mp3"
-                    type="audio/mpeg">
-                </audio>
 
-              </div>
+                <div class="column">
+                    <div class="content">
+                        <p class="has-text-centered">
+                            Music Moment Localization (MML) results
+                        </p>
+                        <img src="static/images/MML_result.png" width="97%" />
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="columns is-centered">
+                        <div class="column content">
+                            <p class="has-text-centered">
+                                Video-to-Music Moment Retrieval (<span style="color:green">VMMR</span>) results
+                            </p>
+                            <img src="static/images/VMMR_result.png" width="100%" />
+                        </div>
+
+                    </div>
+                </div>
             </div>
-          </div>
-          <!--/ Moment. -->
         </div>
+    </section>
 
 
-        <!-- video show 3 -->
-        <div class="columns is-centered">
-          <!-- Video. -->
-          <div class="column">
-            <div class="content">
-              <p class="has-text-centered">
-                Video duration: 15.60s
-              </p>
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="60%">
-                <source src="static/videos/98342395564.mp4" type="video/mp4">
-              </video>
+
+    <!-- Image carousel -->
+    <section class="hero is-small is-light">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+
+                <h2 class="title has-text-centered is-3">Data Display</h2>
+
+
+                <!-- video show 1 -->
+                <div class="columns is-centered">
+                    <!-- Video. -->
+                    <div class="column">
+                        <div class="content">
+                            <h2 class="subtitle has-text-centered is-5">
+                                Input Video
+                            </h2>
+                            <p class="has-text-centered">
+                                Video duration: 12.80s
+                            </p>
+                            <video id="dollyzoom" autoplay controls muted loop playsinline height="60%">
+                                <source src="static/videos/112399878654.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <!--/ Video. -->
+
+                    <!-- Music. -->
+                    <div class="column">
+                        <div class="columns is-centered">
+                            <div class="column content">
+                                <h2 class="subtitle has-text-centered is-5">
+                                    Retrieved Music
+                                </h2>
+                                <p class="has-text-centered">
+                                    &nbsp
+                                </p>
+
+                                <div class="has-text-centered">
+                                    <code>Ground truth music</code>
+                                </div>
+                                <audio id="matting-audio" controls>
+                                    <source
+                                        src="static/videos/112399878654/112399878654_corresponding_complete_music_有没有动心.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="has-text-centered">
+                                    <code>Candidate music rank1</code>
+                                </div>
+                                <audio id="matting-audio" controls>
+                                    <source src="static/videos/112399878654/rank1_4+5xq5tjn434ss7d2+日落的云（剪辑版）.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="has-text-centered">
+                                    <code>Candidate music rank2</code>
+                                </div>
+                                <audio id="matting-audio" controls>
+                                    <source src="static/videos/112399878654/rank2_4+5xn824j353vza9i+热恋情节(剪辑版).mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="has-text-centered">
+                                    <code>Candidate music rank3</code>
+                                </div>
+                                <audio id="matting-audio" controls>
+                                    <source src="static/videos/112399878654/rank3_4+5xu2n434j5wyda2+我爱你多一点点(加长版).mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="has-text-centered">
+                                    <code>Candidate music rank4</code>
+                                </div>
+                                <audio id="matting-audio" controls>
+                                    <source src="static/videos/112399878654/rank4_4+5xevgxrievi892i+目及皆是你(心跳版).mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ Music. -->
+
+                    <!-- Moment. -->
+                    <div class="column">
+                        <div class="columns is-centered">
+                            <div class="column content">
+                                <h2 class="subtitle has-text-centered is-5">
+                                    Located Moment
+                                </h2>
+                                <p class="has-text-centered">
+                                    &nbsp
+                                </p>
+                                <div class="has-text-centered">
+                                    <code>Ground truth moment (47.0-59.8s)</code>
+                                </div>
+                                <audio id="matting-audio" controls>
+                                    <source
+                                        src="static/videos/112399878654/112399878654_corresponding_complete_music_有没有动心_47.0-59.8.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="has-text-centered">
+                                    <code>Moment rank1 (0.01-12.7s)</code>
+                                </div>
+                                <audio id="matting-audio" controls>
+                                    <source
+                                        src="static/videos/112399878654/rank1_4+5xq5tjn434ss7d2+日落的云（剪辑版）_0.01-12.7.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="has-text-centered">
+                                    <code>Moment rank2 (0.08-12.7s)</code>
+                                </div>
+                                <audio id="matting-audio" controls>
+                                    <source
+                                        src="static/videos/112399878654/rank2_4+5xn824j353vza9i+热恋情节(剪辑版)_0.08-12.65.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="has-text-centered">
+                                    <code>Moment rank3 (0.07-12.7s)</code>
+                                </div>
+                                <audio id="matting-audio" controls>
+                                    <source
+                                        src="static/videos/112399878654/rank3_4+5xu2n434j5wyda2+我爱你多一点点(加长版)_0.07-12.65.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="has-text-centered">
+                                    <code>Moment rank4 (0.17-30.5s)</code>
+                                </div>
+                                <audio id="matting-audio" controls>
+                                    <source
+                                        src="static/videos/112399878654/rank4_4+5xevgxrievi892i+目及皆是你(心跳版)_0.17-30.5.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ Moment. -->
+                </div>
+
+
+                <!-- video show 2 -->
+                <div class="columns is-centered">
+                    <!-- Video. -->
+                    <div class="column">
+                        <div class="content">
+                            <p class="has-text-centered">
+                                Video duration: 30.31s
+                            </p>
+                            <video id="dollyzoom" autoplay controls muted loop playsinline height="60%">
+                                <source src="static/videos/110568294389.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <!--/ Video. -->
+
+                    <!-- Music. -->
+                    <div class="column">
+                        <div class="columns is-centered">
+                            <div class="column content">
+                                <p class="has-text-centered">
+                                    &nbsp
+                                </p>
+
+                                <div class="has-text-centered">
+                                    <code>Ground truth music</code>
+                                </div>
+                                <audio id="matting-audio" controls>
+                                    <source
+                                        src="static/videos/110568294389/110568294389_corresponding_complete_music_快乐小宝贝（剪辑版）.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="has-text-centered">
+                                    <code>Candidate music rank1</code>
+                                </div>
+                                <audio id="matting-audio" controls>
+                                    <source src="static/videos/110568294389/rank1_4+5xcgif96ptbysjk+洛城花.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="has-text-centered">
+                                    <code>Candidate music rank2</code>
+                                </div>
+                                <audio id="matting-audio" controls>
+                                    <source src="static/videos/110568294389/rank2_4+5xnxxwz98pnk8mq+挖呀挖呀.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="has-text-centered">
+                                    <code>Candidate music rank3</code>
+                                </div>
+                                <audio id="matting-audio" controls>
+                                    <source src="static/videos/110568294389/rank3_4+5x4ip566zgkfqt6+听我说谢谢你.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ Music. -->
+
+                    <!-- Moment. -->
+                    <div class="column">
+                        <div class="columns is-centered">
+                            <div class="column content">
+                                <p class="has-text-centered">
+                                    &nbsp
+                                </p>
+                                <div class="has-text-centered">
+                                    <code>Ground truth moment (10.07-40.4s)</code>
+                                </div>
+                                <audio id="matting-audio" controls>
+                                    <source
+                                        src="static/videos/110568294389/110568294389_corresponding_complete_music_快乐小宝贝（剪辑版）_10.07-40.39.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="has-text-centered">
+                                    <code>Moment rank1 (60.47-90.9s)</code>
+                                </div>
+                                <audio id="matting-audio" controls>
+                                    <source src="static/videos/110568294389/rank1_4+5xcgif96ptbysjk+洛城花_60.47-90.87.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="has-text-centered">
+                                    <code>Moment rank2 (3.82-34.0s)</code>
+                                </div>
+                                <audio id="matting-audio" controls>
+                                    <source src="static/videos/110568294389/rank2_4+5xnxxwz98pnk8mq+挖呀挖呀_3.82-34.0.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="has-text-centered">
+                                    <code>Moment rank3 (41.44-72.4s)</code>
+                                </div>
+                                <audio id="matting-audio" controls>
+                                    <source
+                                        src="static/videos/110568294389/rank3_4+5x4ip566zgkfqt6+听我说谢谢你_41.44-72.37.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ Moment. -->
+                </div>
+
+
+                <!-- video show 3 -->
+                <div class="columns is-centered">
+                    <!-- Video. -->
+                    <div class="column">
+                        <div class="content">
+                            <p class="has-text-centered">
+                                Video duration: 15.60s
+                            </p>
+                            <video id="dollyzoom" autoplay controls muted loop playsinline height="60%">
+                                <source src="static/videos/98342395564.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <!--/ Video. -->
+
+                    <!-- Music. -->
+                    <div class="column">
+                        <div class="columns is-centered">
+                            <div class="column content">
+                                <p class="has-text-centered">
+                                    &nbsp
+                                </p>
+
+                                <div class="has-text-centered">
+                                    <code>Ground truth music</code>
+                                </div>
+                                <audio id="matting-audio" controls>
+                                    <source
+                                        src="static/videos/98342395564/98342395564_corresponding_complete_music_洪荒之力(DJ版).mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="has-text-centered">
+                                    <code>Candidate music rank1</code>
+                                </div>
+                                <audio id="matting-audio" controls>
+                                    <source src="static/videos/98342395564/rank1_4+5xvj9zgxkayrk56+气质拿捏.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="has-text-centered">
+                                    <code>Candidate music rank2</code>
+                                </div>
+                                <audio id="matting-audio" controls>
+                                    <source src="static/videos/98342395564/rank2_4+5xstkhpkytds6qs+瘦巴巴的老爷们（DJ版）.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="has-text-centered">
+                                    <code>Candidate music rank3</code>
+                                </div>
+                                <audio id="matting-audio" controls>
+                                    <source src="static/videos/98342395564/rank3_4+5xsh8n2gx7adh8a+生而平凡（DJ小桐）.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ Music. -->
+
+                    <!-- Moment. -->
+                    <div class="column">
+                        <div class="columns is-centered">
+                            <div class="column content">
+                                <p class="has-text-centered">
+                                    &nbsp
+                                </p>
+                                <div class="has-text-centered">
+                                    <code>Ground truth moment (0-15.6s)</code>
+                                </div>
+                                <audio id="matting-audio" controls>
+                                    <source
+                                        src="static/videos/98342395564/98342395564_corresponding_complete_music_洪荒之力(DJ版)_0-15.6.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="has-text-centered">
+                                    <code>Moment rank1 (0.02-15.3s)</code>
+                                </div>
+                                <audio id="matting-audio" controls>
+                                    <source src="static/videos/98342395564/rank1_4+5xvj9zgxkayrk56+气质拿捏_0.02-15.29.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="has-text-centered">
+                                    <code>Moment rank2 (0.07-15.5s)</code>
+                                </div>
+                                <audio id="matting-audio" controls>
+                                    <source
+                                        src="static/videos/98342395564/rank2_4+5xstkhpkytds6qs+瘦巴巴的老爷们（DJ版）_0.07-15.54.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                                <div class="has-text-centered">
+                                    <code>Moment rank3 (0.06-15.5s)</code>
+                                </div>
+                                <audio id="matting-audio" controls>
+                                    <source
+                                        src="static/videos/98342395564/rank3_4+5xsh8n2gx7adh8a+生而平凡（DJ小桐）_0.06-15.5.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ Moment. -->
+                </div>
+
+
+
+
+
+
+                <h2 class="title is-4">Qualitative results of Music Moment Localization (MML)</h2>
+                <div id="results-carousel" class="carousel results-carousel">
+                    <div class="item">
+                        <div class="has-text-centered">
+                            <img src="static/images/photo110568294389 show.png" alt="MY ALT TEXT" width="800"
+                                height="900" />
+                        </div>
+                        <h2 class="subtitle has-text-centered">
+                            Video Tag: <em>Parenting</em>
+                        </h2>
+                    </div>
+                    <div class="item">
+                        <div class="has-text-centered">
+                            <img src="static/images/photo112399878654 show.png" alt="MY ALT TEXT" width="800"
+                                height="900" />
+                        </div>
+                        <h2 class="subtitle has-text-centered">
+                            Video Tag: <em>Fashion</em>
+                        </h2>
+                    </div>
+                </div>
+
             </div>
-          </div>
-          <!--/ Video. -->
+        </div>
+    </section>
+    <!-- End image carousel -->
 
-          <!-- Music. -->
-          <div class="column">
+
+
+    <footer class="footer">
+        <div class="container">
             <div class="columns is-centered">
-              <div class="column content">
-                <p class="has-text-centered">
-                  &nbsp
-                </p>
+                <div class="column is-8">
+                    <div class="content">
+                        <p>
+                            This page was built using the <a
+                                href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+                            You are free to borrow the of this website, we just ask that you link back to this page in
+                            the footer.
+                            <br> This website is licensed under a <a rel="license"
+                                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                                Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </p>
 
-                <div class="has-text-centered">
-                  <code>Ground truth music</code>
+                    </div>
                 </div>
-                <audio id="matting-audio" controls>
-                  <source src="static/videos/98342395564/98342395564_corresponding_complete_music_洪荒之力(DJ版).mp3"
-                    type="audio/mpeg">
-                </audio>
-                <div class="has-text-centered">
-                  <code>Candidate music rank1</code>
-                </div>
-                <audio id="matting-audio" controls>
-                  <source src="static/videos/98342395564/rank1_4+5xvj9zgxkayrk56+气质拿捏.mp3" type="audio/mpeg">
-                </audio>
-                <div class="has-text-centered">
-                  <code>Candidate music rank2</code>
-                </div>
-                <audio id="matting-audio" controls>
-                  <source src="static/videos/98342395564/rank2_4+5xstkhpkytds6qs+瘦巴巴的老爷们（DJ版）.mp3" type="audio/mpeg">
-                </audio>
-                <div class="has-text-centered">
-                  <code>Candidate music rank3</code>
-                </div>
-                <audio id="matting-audio" controls>
-                  <source src="static/videos/98342395564/rank3_4+5xsh8n2gx7adh8a+生而平凡（DJ小桐）.mp3" type="audio/mpeg">
-                </audio>
-
-              </div>
             </div>
-          </div>
-          <!--/ Music. -->
-
-          <!-- Moment. -->
-          <div class="column">
-            <div class="columns is-centered">
-              <div class="column content">
-                <p class="has-text-centered">
-                  &nbsp
-                </p>
-                <div class="has-text-centered">
-                  <code>Ground truth moment (0-15.6s)</code>
-                </div>
-                <audio id="matting-audio" controls>
-                  <source src="static/videos/98342395564/98342395564_corresponding_complete_music_洪荒之力(DJ版)_0-15.6.mp3"
-                    type="audio/mpeg">
-                </audio>
-                <div class="has-text-centered">
-                  <code>Moment rank1 (0.02-15.3s)</code>
-                </div>
-                <audio id="matting-audio" controls>
-                  <source src="static/videos/98342395564/rank1_4+5xvj9zgxkayrk56+气质拿捏_0.02-15.29.mp3" type="audio/mpeg">
-                </audio>
-                <div class="has-text-centered">
-                  <code>Moment rank2 (0.07-15.5s)</code>
-                </div>
-                <audio id="matting-audio" controls>
-                  <source src="static/videos/98342395564/rank2_4+5xstkhpkytds6qs+瘦巴巴的老爷们（DJ版）_0.07-15.54.mp3"
-                    type="audio/mpeg">
-                </audio>
-                <div class="has-text-centered">
-                  <code>Moment rank3 (0.06-15.5s)</code>
-                </div>
-                <audio id="matting-audio" controls>
-                  <source src="static/videos/98342395564/rank3_4+5xsh8n2gx7adh8a+生而平凡（DJ小桐）_0.06-15.5.mp3"
-                    type="audio/mpeg">
-                </audio>
-
-              </div>
-            </div>
-          </div>
-          <!--/ Moment. -->
         </div>
+    </footer>
 
+    <!-- Statcounter tracking code -->
 
+    <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
-
-
-
-        <h2 class="title is-4">Qualitative results of Music Moment Localization (MML)</h2>
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item">
-            <div class="has-text-centered">
-              <img src="static/images/photo110568294389 show.png" alt="MY ALT TEXT" width="800" height="900" />
-            </div>
-            <h2 class="subtitle has-text-centered">
-              Video Tag: <em>Parenting</em>
-            </h2>
-          </div>
-          <div class="item">
-            <div class="has-text-centered">
-              <img src="static/images/photo112399878654 show.png" alt="MY ALT TEXT" width="800" height="900" />
-            </div>
-            <h2 class="subtitle has-text-centered">
-              Video Tag: <em>Fashion</em>
-            </h2>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- End image carousel -->
-
-
-
-  <footer class="footer">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-8">
-          <div class="content">
-            <p>
-              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
-                target="_blank">Academic Project Page Template</a> which was adopted from the <a
-                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-              You are free to borrow the of this website, we just ask that you link back to this page in the footer.
-              <br> This website is licensed under a <a rel="license"
-                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-                Commons Attribution-ShareAlike 4.0 International License</a>.
-            </p>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Statcounter tracking code -->
-
-  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-  <!-- End of Statcounter Code -->
+    <!-- End of Statcounter Code -->
 
 </body>
 
