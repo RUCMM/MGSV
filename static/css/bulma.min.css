@@ -2317,6 +2317,14 @@ fieldset[disabled] .button {
     text-align: center
 }
 
+.content figure:first-child {
+    margin-top: 20em
+}
+
+.content figure:last-child {
+    margin-bottom: 20em
+}
+
 .content figure:not(:first-child) {
     margin-top: 2em
 }
@@ -3481,7 +3489,7 @@ a.tag:hover {
 }
 
 .subtitle.is-3 {
-    font-size: 2rem
+    margin-top: 20rem
 }
 
 .subtitle.is-4 {
