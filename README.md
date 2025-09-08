@@ -19,8 +19,3 @@ Don't forget to cite this source if it proves useful in your research!
   year={2025}
 }
 ```
-
----
-
-本地启动：python -m http.server 8000
-查看：http://localhost:8000
